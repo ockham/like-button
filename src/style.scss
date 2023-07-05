@@ -1,12 +1,32 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+.like-button-parent {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	width: 240px;
+	height: 48px;
+	border-radius: 3px;
+	color: var(--wp--preset--color--black);
+	background: var(--wp--preset--color--white);
+	font-size: var(--wp--preset--font-size--medium);
+	line-height: 24px;
+	font-weight: 600;
+}
 
-.wp-block-create-block-like-button {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+.like-button-child {
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+.like-button-child svg {
+	margin-right: 14px;
+}
+
+.liked svg {
+	fill: #dc3e3e;
+}
+
+.wpmovies-liked svg > path {
+	stroke-width: 0;
 }
