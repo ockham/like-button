@@ -6,12 +6,14 @@ $heart_icon         = file_get_contents( plugin_dir_path( __DIR__ ) . '/empty-he
 $wrapper_attributes = get_block_wrapper_attributes();
 
 $likedComments = array();
+$likedPosts    = array();
 
 wp_store(
 	array(
 		'state'     => array(
 			'likes' => array(
 				'likedComments' => $likedComments,
+				'likedPosts'    => $likedPosts,
 			),
 		),
 		'selectors' => array(
