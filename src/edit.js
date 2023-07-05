@@ -31,8 +31,12 @@ import './editor.scss';
  */
 export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Like Button – hello from the editor!', 'like-button' ) }
-		</p>
+		<div {...useBlockProps()}>
+			<div class="like-button-parent">
+				<div class="like-button-child">
+					<span>Like</span>
+				</div>
+			</div>
+		</div>
 	);
 }
