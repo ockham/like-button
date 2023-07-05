@@ -36,6 +36,7 @@ if ( ! empty( $block->context['commentId'] ) ) {
 
 <div
 	<?php echo $wrapper_attributes; ?>
+	data-wp-interactive
 	data-wp-context='<?php echo $context; ?>'
 >
 	<div
