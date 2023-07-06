@@ -21,6 +21,8 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 import './editor.scss';
 
+import emptyHeartUrl from '../empty-heart.svg';
+
 /**
  * The edit function describes the structure of your block in the context of the
  * editor. This represents what the editor will render when the block is used.
@@ -39,7 +41,7 @@ export default function Edit() {
 						role="img"
 						className="emoji"
 						alt=":heart:"
-						src="https://s.w.org/images/core/emoji/14.0.0/svg/2764.svg"
+						src={ emptyHeartUrl }
 					/>
 					<span>Like</span>
 				</div>
