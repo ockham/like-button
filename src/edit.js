@@ -39,7 +39,6 @@ export default function Edit() {
 					<img
 						draggable="false"
 						role="img"
-						className="emoji"
 						alt=":heart:"
 						src={ emptyHeartUrl }
 					/>

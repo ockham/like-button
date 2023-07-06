@@ -17,5 +17,8 @@
 	"style": "file:./style-index.css",
 	"render": "file:./render.php",
 	"viewScript": "file:./view.js",
-	"usesContext": [ "postType", "postId", "commentId" ]
+	"usesContext": [ "postType", "postId", "commentId" ],
+	"__experimentalAutoInsert": {
+		"core/comment-template": "lastChild"
+	}
 }
