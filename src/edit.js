@@ -34,6 +34,13 @@ export default function Edit() {
 		<div {...useBlockProps()}>
 			<div class="like-button-parent">
 				<div class="like-button-child">
+					<img
+						draggable="false"
+						role="img"
+						className="emoji"
+						alt=":heart:"
+						src="https://s.w.org/images/core/emoji/14.0.0/svg/2764.svg"
+					/>
 					<span>Like</span>
 				</div>
 			</div>
