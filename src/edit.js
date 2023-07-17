@@ -34,8 +34,8 @@ import emptyHeartUrl from '../empty-heart.svg';
 export default function Edit() {
 	return (
 		<div {...useBlockProps()}>
-			<div class="like-button-parent">
-				<div class="like-button-child">
+			<div className="like-button-parent">
+				<div className="like-button-child">
 					<img
 						draggable="false"
 						role="img"
