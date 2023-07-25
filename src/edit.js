@@ -21,7 +21,7 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 import './editor.scss';
 
-import emptyHeartUrl from '../empty-heart.svg';
+import { ReactComponent as EmptyHeart } from '../empty-heart.svg';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -36,12 +36,7 @@ export default function Edit() {
 		<div {...useBlockProps()}>
 			<div className="like-button-parent">
 				<div className="like-button-child">
-					<img
-						draggable="false"
-						role="img"
-						alt=":heart:"
-						src={ emptyHeartUrl }
-					/>
+					<EmptyHeart />
 					<span>Like</span>
 				</div>
 			</div>
