@@ -18,7 +18,7 @@
 	"render": "file:./render.php",
 	"viewScript": "file:./view.js",
 	"usesContext": [ "postType", "postId", "commentId" ],
-	"__experimentalAutoInsert": {
+	"__experimentalBlockHooks": {
 		"core/comment-template": "lastChild"
 	}
 }
