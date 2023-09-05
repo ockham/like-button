@@ -2,7 +2,7 @@
 /**
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
  */
-$heart_icon         = file_get_contents( plugin_dir_path( __DIR__ ) . 'empty-heart.svg' );
+$heart_icon         = file_get_contents( plugin_dir_path( __DIR__ ) . 'public/images/empty-heart.svg' );
 $wrapper_attributes = get_block_wrapper_attributes();
 
 $likedComments = array();
