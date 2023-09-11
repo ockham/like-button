@@ -18,7 +18,7 @@
 	"render": "file:./render.php",
 	"viewScript": "file:./view.js",
 	"usesContext": [ "postType", "postId", "commentId" ],
-	"__experimentalBlockHooks": {
+	"blockHooks": {
 		"core/comment-template": "lastChild"
 	}
 }
