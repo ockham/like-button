@@ -34,11 +34,9 @@ import { ReactComponent as EmptyHeart } from '../public/images/empty-heart.svg';
 export default function Edit() {
 	return (
 		<div {...useBlockProps()}>
-			<div className="like-button-parent">
-				<div className="like-button-child">
-					<EmptyHeart />
-					<span>Like</span>
-				</div>
+			<div className="like-button">
+				<EmptyHeart />
+				<span>Like</span>
 			</div>
 		</div>
 	);

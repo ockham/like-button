@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-const likeButtons = document.querySelectorAll('.like-button-parent');
+const likeButtons = document.querySelectorAll('.like-button');
 
 likeButtons.forEach( likeButton => {
 	likeButton.onclick = function() {

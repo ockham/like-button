@@ -2,7 +2,7 @@
 	margin: -25px 0 25px 60px;
 }
 
-.like-button-parent {
+.like-button {
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -15,19 +15,10 @@
 	font-weight: 600;
 }
 
-.like-button-child {
-	display: flex;
-	align-items: center;
-}
-
-.like-button-child svg {
+.like-button svg {
 	margin-right: 14px;
 }
 
 .liked svg {
 	fill: #dc3e3e;
-}
-
-.wpmovies-liked svg > path {
-	stroke-width: 0;
 }
