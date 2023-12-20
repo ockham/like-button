@@ -31,9 +31,12 @@ import { ReactComponent as EmptyHeart } from '../public/images/empty-heart.svg';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
+export default function Edit( {
+	__unstableLayoutClassNames: layoutClassNames,
+} ) {
+	const blockProps = useBlockProps( { className: layoutClassNames } );
 	return (
-		<div {...useBlockProps()}>
+		<div {...blockProps}>
 			<div className="like-button">
 				<EmptyHeart />
 				<span>Like</span>

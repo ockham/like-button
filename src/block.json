@@ -8,7 +8,8 @@
 	"icon": "heart",
 	"description": "Example block scaffolded with Create Block tool.",
 	"supports": {
-		"html": false
+		"html": false,
+		"layout": true
 	},
 	"textdomain": "like-button",
 	"editorScript": "file:./index.js",
