@@ -46,14 +46,7 @@ function insert_like_button_after_post_content( $hooked_block, $position, $ancho
 	return array(
 		'blockName' => 'core/group',
 		'attrs'     => $attrs,
-		'innerBlocks' => array(
-			array(
-				'blockName'    => 'ockham/like-button',
-				'attrs'        => array(),
-				'innerBlocks'  => array(),
-				'innerContent' => array(),
-			),
-		),
+		'innerBlocks' => array( $hooked_block ),
 		'innerContent' => array(
 			'<div class="wp-block-group">',
 			null,
