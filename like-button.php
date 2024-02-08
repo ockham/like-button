@@ -25,6 +25,18 @@ function create_block_like_button_block_init() {
 }
 add_action( 'init', 'create_block_like_button_block_init' );
 
+function add_like_button_block_after_post_content_block( $hooked_block_types, $relative_position, $anchor_block_type, $context ) {
+	if ( ! $context instanceof WP_Block_Template || ! property_exists( $context, 'slug' ) || 'single' !== $context->slug ) {
+		return $hooked_block_types;
+	}
+
+	if ( 'after' === $relative_position && 'core/post-content' === $anchor_block_type ) {
+		$hooked_block_types[] = 'ockham/like-button';
+	}
+	return $hooked_block_types;
+}
+add_filter( 'hooked_block_types', 'add_like_button_block_after_post_content_block', 10, 4 );
+
 function set_like_button_block_layout_attribute_based_on_adjacent_block( $hooked_block, $relative_position, $anchor_block ) {
 	// Is the hooked block adjacent to the anchor block?
 	if ( 'before' !== $relative_position && 'after' !== $relative_position ) {

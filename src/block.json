@@ -19,7 +19,6 @@
 	"viewScript": "file:./view.js",
 	"usesContext": [ "postType", "postId", "commentId" ],
 	"blockHooks": {
-		"core/comment-template": "lastChild",
-		"core/post-content": "after"
+		"core/comment-template": "lastChild"
 	}
 }
