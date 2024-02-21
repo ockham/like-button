@@ -37,7 +37,7 @@ function add_like_button_block_after_post_content_block( $hooked_block_types, $r
 }
 add_filter( 'hooked_block_types', 'add_like_button_block_after_post_content_block', 10, 4 );
 
-function set_like_button_block_layout_attribute_based_on_adjacent_block( $hooked_block, $relative_position, $anchor_block ) {
+function set_like_button_block_layout_attribute_based_on_adjacent_block( $hooked_block, $hooked_block_type, $relative_position, $anchor_block ) {
 	// Is the hooked block adjacent to the anchor block?
 	if ( 'before' !== $relative_position && 'after' !== $relative_position ) {
 		return $hooked_block;
@@ -51,4 +51,4 @@ function set_like_button_block_layout_attribute_based_on_adjacent_block( $hooked
 
 	return $hooked_block;
 }
-add_filter( 'hooked_block_ockham/like-button', 'set_like_button_block_layout_attribute_based_on_adjacent_block', 10, 3 );
+add_filter( 'hooked_block_ockham/like-button', 'set_like_button_block_layout_attribute_based_on_adjacent_block', 10, 4 );
