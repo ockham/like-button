@@ -1,0 +1,21 @@
+{
+	"landingPage": "/wp-admin/site-editor.php",
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "login"
+		},
+		{
+			"step": "installPlugin",
+			"pluginZipFile": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/ockham/like-button/trunk/_playground/like-button.zip"
+			},
+			"options": {
+				"activate": true
+			}
+		}
+	]
+}
