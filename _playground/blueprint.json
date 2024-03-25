@@ -10,16 +10,6 @@
 		{
 			"step": "installPlugin",
 			"pluginZipFile": {
-				"resource": "wordpress.org/plugins",
-				"slug": "gutenberg"
-			},
-			"options": {
-				"activate": true
-			}
-		},
-		{
-			"step": "installPlugin",
-			"pluginZipFile": {
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/ockham/like-button/trunk/_playground/like-button.zip"
 			},
