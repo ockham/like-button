@@ -25,6 +25,7 @@ node_modules/
 
 # Output of `wp-scripts plugin-zip`
 *.zip
+!_playground/like-button.zip
 
 # dotenv environment variables file
 .env
