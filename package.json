@@ -15,6 +15,7 @@
 		"plugin-zip": "wp-scripts plugin-zip && copyfiles --verbose like-button.zip _playground/ && rm like-button.zip"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.7.0"
+		"@wordpress/scripts": "^26.7.0",
+		"copyfiles": "^2.4.1"
 	}
 }
