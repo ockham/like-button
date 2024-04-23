@@ -1,16 +1,14 @@
 <?php
 /**
  * Plugin Name:       Like Button
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       Example Like Button block used to demo Block Hooks.
  * Requires at least: 6.4
  * Requires PHP:      7.0
  * Version:           0.8.0
- * Author:            The WordPress Contributors
+ * Author:            Bernie Reiter, Nick Diego, Oscar Lopez
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       like-button
- *
- * @package           create-block
  */
 
 /**
