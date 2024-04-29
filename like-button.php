@@ -50,3 +50,16 @@ function set_like_button_block_layout_attribute_based_on_adjacent_block( $hooked
 	return $hooked_block;
 }
 add_filter( 'hooked_block_ockham/like-button', 'set_like_button_block_layout_attribute_based_on_adjacent_block', 10, 4 );
+
+// Fallback for Classic Themes.
+function add_like_button_after_post_content( $content ) {
+	if ( wp_is_block_theme() || ! is_single() ) {
+		return $content;
+	}
+
+	ob_start();
+	require __DIR__ . '/build/render.php';
+	$like_button = ob_get_clean();
+	return $content . $like_button;
+}
+add_filter( 'the_content', 'add_like_button_after_post_content' );
