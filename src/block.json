@@ -6,7 +6,7 @@
 	"title": "Like Button",
 	"category": "widgets",
 	"icon": "heart",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Example Like Button block used to demo Block Hooks.",
 	"supports": {
 		"html": false,
 		"layout": true
