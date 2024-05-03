@@ -1,6 +1,3 @@
-/**
- * WordPress dependencies
- */
 const likeButtons = document.querySelectorAll('.like-button');
 
 likeButtons.forEach( likeButton => {
