@@ -11,10 +11,10 @@
  * Text Domain:       like-button
  */
 
-function create_block_like_button_block_init() {
+function register_like_button_block() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'create_block_like_button_block_init' );
+add_action( 'init', 'register_like_button_block' );
 
 function add_like_button_block_after_post_content_block( $hooked_block_types, $relative_position, $anchor_block_type, $context ) {
 	if ( ! $context instanceof WP_Block_Template || ! property_exists( $context, 'slug' ) || 'single' !== $context->slug ) {
