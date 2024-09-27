@@ -9,7 +9,8 @@
 	"description": "Example Like Button block used to demo Block Hooks.",
 	"supports": {
 		"html": false,
-		"layout": true
+		"layout": true,
+		"multiple": false
 	},
 	"textdomain": "like-button",
 	"editorScript": "file:./index.js",
