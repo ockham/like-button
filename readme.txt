@@ -2,7 +2,7 @@
 Contributors:      bernhard-reiter, ndiego, oskosk
 Tags:              block
 Tested up to:      6.5
-Stable tag:        0.8.2
+Stable tag:        0.9.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
