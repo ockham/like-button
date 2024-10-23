@@ -12,7 +12,7 @@
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/ockham/like-button/trunk/_playground/like-button.zip"
+				"url": "https://raw.githubusercontent.com/ockham/like-button/trunk/assets/like-button.zip"
 			},
 			"options": {
 				"activate": true
